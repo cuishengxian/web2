@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>yushi</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#all{
+			margin: 0 auto;
+		}
+		#top{
+			height: 40px;
+			margin: 0 auto;
+			width: 1920px;
+		}
+		.toper{
+			width: 750px;
+			height: 40px;
+			margin-left: 920px;
+			line-height: 40px;
+		}
+		.toper span{
+			float: left;
+		}
+		a{
+			color: black;
+			text-decoration: none;
+		}
+		.deng{
+			float: left;
+			margin-left: 30px;
+			font-weight: bold;
+		}
+		.ding{
+			float: left;
+			margin-left:40px;
+		}
+		.ding img{
+			margin-left: 8px;
+			margin-right: 8px;
+		}
+		.wei{
+			float: left;
+			margin-left: 40px;
+		}
+		.wei img{
+			border-left: 1px solid #f5f5f5;
+			margin-left: 2.5px;
+			margin-right: 2.5px;
+		}
+		#top2{
+			width: 1200px;
+			height:70px;
+			margin-top: 20px;
+			background-image: url(img/logo.png);
+			background-repeat: no-repeat;
+			background-position: 0% 50%;
+			position: relative;	
+			margin: 0 auto;
+		}
+		form{
+			margin-left: 430px;
+		}
+		#top2 input{
+			color: #e4e4e4;
+			border: 1px solid black;
+			padding-left: 250px;
+			padding-top: 1px;
+			margin: 16px;
+			width:410px;
+			height: 50px;			
+			margin-top: 10px;		
+		}
+		.sou{
+			width: 50px;
+			height: 50px;
+			border-left: 1px solid #e4e4e4;
+			position: absolute;
+			bottom: 0px;
+			margin-left: 1055px;
+			margin-bottom: 9px;
+			background-image: url(img/search.png);
+			background-repeat: no-repeat; 
+			background-position: 50% 50%;
+		}
+		.buy{
+			float: right;
+			margin-right: -80px;
+			margin-top: -50px;
+		}
+		#nav{
+			height: 53px;
+			margin-top: 5px;
+			border-bottom: 4px solid green;
+			margin-bottom: 0px;
+		}
+		.nav{
+			margin: auto;
+			width:1400px;
+			height:50px;
+			line-height: 50px;
+		}
+		.nav span{
+			margin-left: 100px;
+			float: left;
+		}
+		.nav li{
+			width:100px;
+			height: 47px;
+			float: left;
+			list-style-type: none;
+			margin-left: 30px;
+			text-align: center;
+		}
+		.nav a{
+			display: block;
+		}
+		.nav li:hover{
+			border-bottom: 4px solid green;
+		}
+		.nav a:hover{
+			color: green;
+		}
+		#img{
+			margin: 0 auto;
+			width:1920px;
+			height:670px;
+			background-image: url(img/banner.png);
+			background-repeat: no-repeat;
+		}
+		#bian{
+			width:80px;
+			height: 610px;
+			float: right;
+			margin-top: 0px;
+			background-color: black;
+			position: fixed;
+			top: 190px;
+			right: 0px;
+		}
+		.bi{
+			width: 70px;
+			height: 120px;
+            border-bottom:2px solid #7e7b7b;
+			text-align: center;
+			line-height: 80px;
+			float: left;
+			margin-left: 5px;
+		}
+		.bigo{
+			width: 70px;
+			height: 120px;
+			line-height: 80px;
+			text-align: center;
+			float: left;
+			margin-left: 5px;
+		}
+		.bi img{
+			margin-top: 50px;
+		}
+		.bigo img{
+			margin-top: 50px;
+		}
+		#center{
+			width: 1200px;
+			height: 60px;
+			margin: 0 auto;
+		}
+		.shou{
+			width:70px;
+			height: 60px;
+			line-height: 60px;
+			float: left;
+		}
+		.yu{
+			width:40px;
+			height:60px;
+			line-height: 60px;
+			float: left;
+		}
+		.gong{
+			width: 100px;
+			height:40px;
+			font-size:12px;
+			line-height: 40px;
+			float: right;
+			margin-top: 20px;
+		}
+		#center2{
+			width: 1250px;
+			height: 135px;
+			padding-left: 0px;
+			margin: 0 auto;
+		}
+		.yushi{
+			width: 1250px;
+			height: 45px;
+			border:1px solid #000;
+		}
+		.yushi2{
+			width: 1250px;
+			height: 45px;
+			border-left: 1px solid #000;
+			border-right: 1px solid #000;
+		}
+		.shi{
+	    	width:100px;
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+	     	background-color: #e4e4e4;
+	     	float: left;
+	    }
+	    .yushi ul{
+	    	float: left; 
+	    }
+	    .yushi2 ul{
+	    	float: left; 
+	    }
+		.yushi li{
+			width:120px;
+			height: 45px;
+			margin-left: 10px;
+			line-height: 45px;
+			text-align: center;
+			list-style-type: none;
+			display: inline-block;
+		}
+	    .yushi2 li{
+			width:120px;
+			height: 45px;
+			margin-left: 10px;
+			line-height: 45px;
+			text-align: center;
+			list-style-type: none;
+			display: inline-block;
+		}
+		.yushi li a:visited{
+			color: #61b46a;
+		}
+		.yushi2 li a:visited{
+			color: #61b46a;
+		}
+		.geng{
+			font-size: 13px;
+			line-height: 45px;
+			float: right;
+			margin-right: -20px;
+		}
+		#central{
+			width:1218px;
+			height: 650px;
+			margin: 0 auto;
+			margin-top: 70px;
+		}
+		.yi{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img1.png);
+			background-repeat: no-repeat;			
+		}
+		.one{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img2.png);
+			background-repeat: no-repeat;
+			background-position: 100% 56%;	
+		}
+		.two{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img3.png);
+			background-repeat: no-repeat;
+			background-position: 40% 70%;	
+		}
+		.three{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img4.png);
+			background-repeat: no-repeat;
+			background-position: 67% 70%;	
+		}
+		.four{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img5.png);
+			background-repeat: no-repeat;	
+			background-position: 50% 70%;
+		}
+		.five{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img6.png);
+			background-repeat: no-repeat;
+			background-position: 50% 70%;	
+		}
+		.six{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img7.png);
+			background-repeat: no-repeat;
+			background-position: 40% 70%;	
+		}
+		.seven{
+			border:1px solid #000;
+			width:272px;
+			height: 295px;
+			float:left;
+			margin: 15px;
+			text-align: center;
+			background-image: url(img/img8.png);
+			background-repeat: no-repeat;	
+			background-position: 40% 70%;
+		}
+		.kuang{
+			width: 272px;
+			height: 47px;
+			padding-top: 4px;
+			line-height: 23px;
+			color: #fff;
+			text-align: center;
+			background-color: #474744;
+			opacity: 0.9;
+			margin-top: 246px;
+			display: block;
+		}
+		.fu{
+			width:272px;
+			height: 195px;
+			background-color: #474744;
+			opacity: 0.9;
+			display: none;
+			padding-top: 100px;		
+		}
+		.gai{
+			width: 272px;
+			height:100px;
+			font-size: 20px;
+			line-height: 50px;
+			color: #fff;
+		}
+		.yi:hover .kuang{
+			display: none;
+		}
+		.yi:hover .fu{
+			display: block;
+		}
+		.one:hover .kuang{
+			display: none;
+		}
+		.one:hover .fu{
+			display: block;
+		}
+		.two:hover .kuang{
+			display: none;
+		}
+		.two:hover .fu{
+			display: block;
+		}
+		.three:hover .kuang{
+			display: none;
+		}
+		.three:hover .fu{
+			display: block;
+		}
+		.four:hover .kuang{
+			display: none;
+		}
+		.four:hover .fu{
+			display: block;
+		}
+		.five:hover .kuang{
+			display: none;
+		}
+		.five:hover .fu{
+			display: block;
+		}
+		.six:hover .kuang{
+			display: none;
+		}
+		.six:hover .fu{
+			display: block;
+		}
+		.seven:hover .kuang{
+			display: none;
+		}
+		.seven:hover .fu{
+			display: block;
+		}
+		#dibu{
+			background-color: #e5e5e5;
+			margin:  auto;
+		}
+		.dibu{
+			width: 1920px;
+			height: 100px;
+			margin-top: 150px;
+			padding-top: 36px;
+		}
+		.diyi{
+			width:250px;
+			height: 60px;
+			margin-left: 400px; 
+			background-image: url(img/f1.png);
+			background-repeat: no-repeat;
+			background-position: 2% 50%;
+			float: left;
+		}
+		.diyia{
+			width:180px;
+			height: 60px;
+			line-height: 30px;
+			margin-left: 70px;
+			float: left;
+		}
+		.dier{
+			width:250px;
+			height: 60px;
+			margin-left: 60px; 
+			background-image: url(img/f2.png);
+			background-repeat: no-repeat;
+			background-position: 2% 50%;
+			float: left;
+		}
+		.disan{
+			width:250px;
+			height: 60px;
+			margin-left: 60px; 
+			background-image: url(img/f2.png);
+			background-repeat: no-repeat;
+			background-position: 2% 50%;
+			float: left;
+		}
+		.disi{
+			width:250px;
+			height: 60px;
+			margin-left: 60px; 
+			background-image: url(img/f2.png);
+			background-repeat: no-repeat;
+			background-position: 2% 50%;
+			float: left;
+		}
+		#bottom{
+			width:100%;
+			height: 100px;
+			margin: 0 auto;
+			background-color: #000;
+			padding-top: 10px;
+		}
+		.di{
+			height:60px;
+			color: #fff;
+			text-align: center;
+			margin: 0 auto;
+			background-color: black;
+			line-height: 60px;
+		}
+		.di a{
+			color: #fff;
+		}
+		.zui{
+			width: 800px;
+			height:30px;
+			text-align: center;
+			color: #fff;
+			margin: 0 auto;
+			background-color: black;
+			background-image: url(img/9.png);
+			background-position: 31.5% 50%;
+			background-repeat: no-repeat;
+			line-height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div id="top">
+			<div class="toper">
+				<span>嘿，欢迎来买卖商城</span>
+				<div class="deng">
+					<a href="#">请登录</a>&nbsp&nbsp&nbsp&nbsp
+					<a href="#">免费注册</a>
+				</div>
+				<div class="ding">
+					<a href="#">我的订单 <img src="A:/img/triple.png"></a>
+					<a href="#">我的买猜 <img src="A:/img/triple.png"></a>
+					<a href="#">帮助中心</a>
+				</div>
+				<div class="wei">
+					<a href="#"><img src="img/wb.png"></a>
+					<a href="#"><img src="img/wx.png"></a>
+				</div>
+			</div>		
+		</div>
+		<div id="top2">
+			<form>				
+				<input type="text" name="sousuo" value="请输入搜索内容" />               
+			</form>
+				<div class="sou"></div>				
+		<div class="buy">
+				<a href="#"><img src="img/cart.png"></a>
+		</div>
+		</div>
+		<div id="nav">
+			<div class="nav">
+				<span>全部商品分类 <img src="/img/triple.png"></span>
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">名酒</a></li>
+					<li><a href="#">茗茶</a></li>
+					<li><a href="#">玉石</a></li>
+					<li><a href="#">休闲食品</a></li>
+					<li><a href="#">洗护用品</a></li>
+					<li><a href="#">土特产</a></li>
+					<li><a href="#">积分商城</a></li>
+					<li><a href="#">抽奖游戏</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="img"></div>		
+		<div id="bian">
+			<div class="bi"><a href="#"><img src="img/cart1.png"></a></div>
+			<div class="bi"><a href="#"><img src="img/qq.png"></a></div>
+			<div class="bi"><a href="#"><img src="img/zuji.png"></a></div>
+			<div class="bi"><a href="#"><img src="img/erweima.png"></a></div>
+			<div class="bigo"><a href="#"><img src="img/gotop.png"></a></div>
+		</div>
+		<div id="center">
+			<div class="shou"><h4>首 页&nbsp&nbsp></h4></div>
+			<div class="yu">玉石</div>
+			<div class="gong">共200件相关产品</div>
+		</div>
+		<div id="center2">
+			<div class="yushi">
+				<div class="shi"><a href="#">玉石</a></div>
+				<ul>
+					<li><a href="#">白玉</a></li>
+					<li><a href="#">碧玉</a></li>
+					<li><a href="#">黄玉</a></li>
+					<li><a href="#">和田玉</a></li>
+					<li><a style="color: #71bb79" href="#">翡翠</a></li>
+					<li><a href="#">绿松玉</a></li>
+					<li><a href="#">墨玉</a></li>
+				</ul>
+			</div>
+			<div class="yushi2">
+				<div class="shi"><a href="#">其他</a></div>
+			<ul>
+				<li><a style="color: #71bb79" href="#">吊坠</a></li>
+				<li><a href="#">扳指</a></li>
+				<li><a href="#">手镯</a></li>
+			</ul>			
+			</div>
+			<div class="yushi">
+				<div class="shi"><a href="#">地区</a></div>
+				<ul>
+				   <li><a href="#"></a>北京</li>
+				   <li><a href="#"></a>安徽</li>
+				   <li><a href="#"></a>福建</li>
+				   <li><a href="#"></a>内蒙古</li>
+				   <li><a href="#"></a>宁夏</li>
+				   <li><a href="#"></a>黑龙江</li>
+				   <li><a href="#"></a>河北</li>
+				   <li class="geng"><a href="#"></a>更多</li>
+			    </ul>
+			</div>
+		</div>
+		<div id="central">
+			<div class="yi">
+				<div class="kuang">竞猜价: ￥ 399.00<br>翡翠千手观音吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 399.00<br>翡翠千手观音吊坠</div> </div>
+		    </div>
+			<div class="one">
+				<div class="kuang">竞猜价: ￥ 1980.00<br>翡翠龙凤吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 1980.00<br>翡翠龙凤吊坠</div> </div>
+			</div>
+			<div class="two">
+				<div class="kuang">竞猜价: ￥ 199.00<br>翡翠花蕊吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 199.00<br>翡翠花蕊吊坠</div> </div>
+			</div>
+			<div class="three">
+				<div class="kuang">竞猜价: ￥ 199.00<br>翡翠如意吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 199.00<br>翡翠如意吊坠</div> </div>
+			</div>
+			<div class="four">
+				<div class="kuang">竞猜价: ￥ 99.00<br>翡翠婵吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 99.00<br>翡翠婵吊坠</div> </div>
+			</div>
+			<div class="five">
+				<div class="kuang">竞猜价: ￥ 99.00<br>翡翠观音(浅色)吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 99.00<br>翡翠观音(浅色)吊坠</div> </div>
+		    </div>
+			<div class="six">
+				<div class="kuang">竞猜价: ￥ 199.00<br>翡翠平安扣(深色)吊坠</div>
+				<div class="fu">
+					<div class="gai">竞猜价: ￥ 199.00<br>翡翠平安扣(深色)吊坠</div> </div>
+			</div>
+			<div class="seven">
+				<div class="kuang">竞猜价: ￥ 199.00<br>翡翠如意吊坠</div>			
+			<div class="fu">
+					<div class="gai">竞猜价: ￥ 199.00<br>翡翠如意吊坠</div> </div>
+			</div>
+		</div>
+		<div id="dibu">
+			<div class="dibu">
+			<div class="diyi">
+				<div class="diyia">
+				<a href="#"><span style="font-size: 18px">资质认证</span><br>
+				<span>服务商100%实名认证</span></a>
+			    </div>
+		    </div>
+			<div class="dier">
+				<div class="diyia">
+				<a href="#"><span style="font-size: 18px">支付安全</span><br>
+				<span>明码标价支付及信息安全</span></a>
+			    </div>
+			</div>
+			<div class="disan">
+				<div class="diyia">
+				<a href="#"><span style="font-size: 18px">保险赔付</span><br>
+				<span>为您提供担保赔付</span></a>
+			    </div>
+			</div>
+			<div class="disi">
+				<div class="diyia">
+				<a href="#"><span style="font-size: 18px">售后无忧</span><br>
+				<span>服务出问题经理全程跟进</span></a>
+			    </div>
+			</div>
+		    </div>
+	     </div>
+	     <div id="bottom">
+	     	<div class="di">
+			<a href="#">首页</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp
+			<a href="#">工商代理</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+			<a href="#">财务代记账</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+			<a href="#">企业带款</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+			<a href="#">办公室租聘</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp 
+			<a href="#">社保基金代理</a>&nbsp&nbsp&nbsp|&nbsp&nbsp&nbsp	
+			<a href="#">法律服务</a>
+		</div>
+		<div class="zui">
+			2017-2018 买猜商城有限公司 版权所有
+		</div>
+	     </div>
+</div>
+</body>
+</html>
